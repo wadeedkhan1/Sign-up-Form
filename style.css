@@ -1,0 +1,124 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e9e9e9;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.image {
+    position: relative;
+    flex: 1;
+    width: 33.33%;
+    height: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 20px 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    width: auto;
+    height: 150px; 
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form{
+    width: 100%;
+    max-width: 800px;
+    gap: 15px;
+    border: solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form input {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.form input:invalid {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
+
+.form input:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+    outline: none;
+}
+
+.formcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.button{
+    padding: 10px 30px;
+    margin: 5px 30px;
+    background-color: #cfaeae;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease;;
+}
+
+.button:hover{
+    background-color: #a38888;
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+a{
+    text-decoration: none;
+    color: #806b6b;
+}
+
+.form input:invalid {
+    border-color: red;
+}
+
+.form input:focus {
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+}
